@@ -1,2 +1,2 @@
 python_test: *.py
-	python *_test.py
+	python -m unittest discover -p '*_test.py' -v
