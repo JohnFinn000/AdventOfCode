@@ -1,0 +1,12 @@
+python_test: *.py
+	@echo "Running Python tests"
+	python -m unittest discover -p '*_test.py' -v
+
+ruby_test: *.rb
+	@echo "Running Ruby tests"
+	rspec *_spec.rb
+
+test: python_test ruby_test
+
+clean:
+	rm *.pyc
