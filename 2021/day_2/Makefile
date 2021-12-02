@@ -4,7 +4,7 @@ python_test: *.py
 
 ruby_test: *.rb
 	@echo "Running Ruby tests"
-	rspec *_spec.rb
+	rspec *.rb
 
 test: python_test ruby_test
 
