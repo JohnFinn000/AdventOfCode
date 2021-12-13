@@ -1,4 +1,5 @@
 
+# TODO This solution wasn't finished.
 def calc(data)
   l = data[0].length
   bit = 1 << l - 1
