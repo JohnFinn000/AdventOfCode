@@ -10,7 +10,7 @@ ruby_test: *.rb
 
 go_test: *.go
 	@echo "Running Go tests"
-	go test
+	CGO_ENABLED=0 go test
 
 cpp_test: *.cpp
 	g++ -Wall -W -std=c++17 -o cpp day.cpp ${GTEST}
